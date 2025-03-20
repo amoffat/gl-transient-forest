@@ -35,12 +35,20 @@
             "dynamicWrapping": false,
             "scaleInDock": 1
         },
+        "blank.tmj": {
+            "scale": 5.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 25.909090909090892,
+                "y": 28.090909090909086
+            }
+        },
         "level.tmj": {
             "scale": 2,
-            "selectedLayer": 10,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 101.5,
-                "y": -128.5
+                "x": 27,
+                "y": 7.5
             }
         },
         "tronFreeTiles.tsj": {
@@ -63,6 +71,7 @@
     "recentFiles": [
         "TilesetDesert.tsj",
         "level.tmj",
+        "blank.tmj",
         "Spirit.tsj",
         "Items.tsj"
     ],
