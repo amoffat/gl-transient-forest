@@ -1,0 +1,146 @@
+{ "columns":8,
+ "image":"..\/art\/Pixel Alchemy - Water Elements\/Water_Tiles.png",
+ "imageheight":336,
+ "imagewidth":128,
+ "margin":0,
+ "name":"Water_Tiles",
+ "spacing":0,
+ "tilecount":168,
+ "tiledversion":"1.11.1-99-gec89c545",
+ "tileheight":16,
+ "tilewidth":16,
+ "type":"tileset",
+ "version":"1.10",
+ "wangsets":[
+        {
+         "colors":[
+                {
+                 "color":"#0055ff",
+                 "name":"water",
+                 "probability":1,
+                 "tile":-1
+                }, 
+                {
+                 "color":"#00ff00",
+                 "name":"grass",
+                 "probability":1,
+                 "tile":-1
+                }],
+         "name":"water edge light",
+         "tile":-1,
+         "type":"mixed",
+         "wangtiles":[
+                {
+                 "tileid":0,
+                 "wangid":[2, 2, 2, 2, 1, 2, 2, 2]
+                }, 
+                {
+                 "tileid":1,
+                 "wangid":[2, 2, 0, 0, 0, 0, 0, 2]
+                }, 
+                {
+                 "tileid":2,
+                 "wangid":[2, 2, 0, 0, 0, 0, 0, 2]
+                }, 
+                {
+                 "tileid":3,
+                 "wangid":[2, 2, 2, 2, 0, 0, 0, 2]
+                }, 
+                {
+                 "tileid":8,
+                 "wangid":[1, 2, 2, 2, 1, 2, 2, 2]
+                }, 
+                {
+                 "tileid":11,
+                 "wangid":[0, 2, 2, 2, 0, 0, 0, 0]
+                }, 
+                {
+                 "tileid":16,
+                 "wangid":[1, 2, 2, 2, 0, 2, 2, 2]
+                }, 
+                {
+                 "tileid":19,
+                 "wangid":[0, 2, 2, 2, 0, 0, 0, 0]
+                }, 
+                {
+                 "tileid":24,
+                 "wangid":[0, 0, 0, 2, 2, 2, 2, 2]
+                }, 
+                {
+                 "tileid":25,
+                 "wangid":[0, 0, 0, 2, 2, 2, 0, 0]
+                }, 
+                {
+                 "tileid":26,
+                 "wangid":[0, 0, 0, 2, 2, 2, 0, 0]
+                }, 
+                {
+                 "tileid":27,
+                 "wangid":[0, 2, 2, 2, 2, 2, 0, 0]
+                }, 
+                {
+                 "tileid":32,
+                 "wangid":[2, 2, 2, 1, 2, 2, 2, 2]
+                }, 
+                {
+                 "tileid":33,
+                 "wangid":[1, 2, 2, 1, 1, 1, 2, 2]
+                }, 
+                {
+                 "tileid":34,
+                 "wangid":[2, 2, 2, 1, 1, 1, 2, 2]
+                }, 
+                {
+                 "tileid":35,
+                 "wangid":[2, 2, 2, 2, 2, 1, 2, 2]
+                }, 
+                {
+                 "tileid":40,
+                 "wangid":[2, 1, 1, 1, 2, 2, 2, 2]
+                }, 
+                {
+                 "tileid":41,
+                 "wangid":[2, 1, 1, 2, 1, 1, 2, 2]
+                }, 
+                {
+                 "tileid":42,
+                 "wangid":[2, 2, 2, 2, 2, 2, 2, 2]
+                }, 
+                {
+                 "tileid":43,
+                 "wangid":[2, 2, 1, 2, 0, 1, 1, 1]
+                }, 
+                {
+                 "tileid":48,
+                 "wangid":[2, 1, 1, 1, 1, 2, 1, 2]
+                }, 
+                {
+                 "tileid":49,
+                 "wangid":[1, 1, 1, 1, 1, 1, 1, 1]
+                }, 
+                {
+                 "tileid":50,
+                 "wangid":[2, 2, 2, 1, 1, 2, 1, 1]
+                }, 
+                {
+                 "tileid":51,
+                 "wangid":[2, 2, 2, 2, 2, 1, 1, 1]
+                }, 
+                {
+                 "tileid":56,
+                 "wangid":[2, 1, 1, 2, 2, 2, 2, 2]
+                }, 
+                {
+                 "tileid":57,
+                 "wangid":[1, 1, 1, 2, 2, 2, 1, 1]
+                }, 
+                {
+                 "tileid":58,
+                 "wangid":[1, 1, 1, 2, 1, 2, 1, 1]
+                }, 
+                {
+                 "tileid":59,
+                 "wangid":[2, 2, 2, 2, 2, 2, 1, 1]
+                }]
+        }]
+}
