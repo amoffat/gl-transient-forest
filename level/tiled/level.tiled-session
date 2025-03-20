@@ -3,10 +3,11 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "level.tmj",
+    "activeFile": "",
     "expandedProjectPaths": [
         "."
     ],
+    "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
         "Fish.tsj": {
             "scaleInDock": 1
@@ -44,11 +45,11 @@
             }
         },
         "level.tmj": {
-            "scale": 2,
-            "selectedLayer": 0,
+            "scale": 1.5,
+            "selectedLayer": -1,
             "viewCenter": {
-                "x": 27,
-                "y": 7.5
+                "x": 153.33333333333334,
+                "y": 147
             }
         },
         "tronFreeTiles.tsj": {
@@ -63,14 +64,12 @@
     "map.tileHeight": 16,
     "map.tileWidth": 16,
     "openFiles": [
-        "level.tmj",
-        "TilesetDesert.tsj"
     ],
     "project": "level.tiled-project",
     "property.type": "bool",
     "recentFiles": [
-        "TilesetDesert.tsj",
         "level.tmj",
+        "TilesetDesert.tsj",
         "blank.tmj",
         "Spirit.tsj",
         "Items.tsj"
