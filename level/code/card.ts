@@ -7,13 +7,13 @@ import { Card } from "@gl/types/card";
 export function card(): Card {
   return {
     level: {
-      name: "Your level name",
+      name: "Transient Forest",
       version: 1,
     },
     source: "https://github.com/your-username/your-repo",
     credits: [
       {
-        name: "Your name",
+        name: "Andrew",
         role: "Author",
         link: "https://your-website.com",
       },

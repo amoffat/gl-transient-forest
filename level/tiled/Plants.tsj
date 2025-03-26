@@ -8,7 +8,7 @@
  "margin":0,
  "name":"Plants",
  "spacing":0,
- "tilecount":75,
+ "tilecount":48,
  "tiledversion":"1.11.2",
  "tileheight":80,
  "tiles":[
@@ -58,145 +58,593 @@
          "id":7,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/birchTree01.png",
          "imageheight":24,
-         "imagewidth":10
+         "imagewidth":10,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":1,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":3,
+                     "x":4,
+                     "y":21
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            }
         }, 
         {
          "id":8,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/birchTree02.png",
          "imageheight":32,
-         "imagewidth":16
+         "imagewidth":16,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":1.72727272727273,
+                     "id":2,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":3.72727272727273,
+                     "x":6.18181818181818,
+                     "y":29.0909090909091
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            }
         }, 
         {
          "id":9,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/birchTree03.png",
          "imageheight":45,
-         "imagewidth":21
+         "imagewidth":21,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":1.90909090909091,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":3.54545454545455,
+                     "x":8.18181818181818,
+                     "y":40.8181818181818
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            }
         }, 
         {
          "id":10,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/birchTree04.png",
          "imageheight":62,
-         "imagewidth":25
-        }, 
-        {
-         "id":11,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/box.png",
-         "imageheight":11,
-         "imagewidth":14
-        }, 
-        {
-         "id":12,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/bucket_Empty.png",
-         "imageheight":10,
-         "imagewidth":9
-        }, 
-        {
-         "id":13,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/bucket_Water.png",
-         "imageheight":10,
-         "imagewidth":9
-        }, 
-        {
-         "id":14,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/cabin.png",
-         "imageheight":69,
-         "imagewidth":65
-        }, 
-        {
-         "id":15,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/cabin_Ruins.png",
-         "imageheight":64,
-         "imagewidth":64
+         "imagewidth":25,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":3,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":5,
+                     "x":11,
+                     "y":58
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            }
         }, 
         {
          "id":16,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/fallenLog.png",
          "imageheight":22,
-         "imagewidth":32
+         "imagewidth":32,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "height":0,
+                     "id":1,
+                     "name":"",
+                     "polygon":[
+                            {
+                             "x":0,
+                             "y":0
+                            }, 
+                            {
+                             "x":3.90909090909091,
+                             "y":3.81818181818182
+                            }, 
+                            {
+                             "x":31.8181818181818,
+                             "y":-2.81818181818182
+                            }, 
+                            {
+                             "x":28.9090909090909,
+                             "y":-6.45454545454546
+                            }],
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":0,
+                     "x":0.181818181818182,
+                     "y":17.2727272727273
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            }
         }, 
         {
          "id":17,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/grassBunch02.png",
          "imageheight":9,
-         "imagewidth":7
+         "imagewidth":7,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":2,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":5,
+                     "x":1,
+                     "y":7
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            },
+         "type":"NonObstructing"
         }, 
         {
          "id":18,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/grassBunch03.png",
          "imageheight":11,
-         "imagewidth":12
+         "imagewidth":12,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":3,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":9,
+                     "x":2,
+                     "y":7
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            },
+         "type":"NonObstructing"
         }, 
         {
          "id":19,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/grassBunch04.png",
          "imageheight":12,
-         "imagewidth":11
+         "imagewidth":11,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":3,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":9,
+                     "x":1,
+                     "y":8
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            },
+         "type":"NonObstructing"
         }, 
         {
          "id":20,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/leafyTree01.png",
          "imageheight":31,
-         "imagewidth":16
+         "imagewidth":16,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":2,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":5,
+                     "x":3,
+                     "y":26
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            }
         }, 
         {
          "id":21,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/leafyTree02.png",
          "imageheight":50,
-         "imagewidth":25
+         "imagewidth":25,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":5,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":11,
+                     "x":8,
+                     "y":43
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            }
         }, 
         {
          "id":22,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/leafyTree03.png",
          "imageheight":63,
-         "imagewidth":32
+         "imagewidth":32,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":5,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":12,
+                     "x":14,
+                     "y":56
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            }
         }, 
         {
          "id":23,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/leafyTree04.png",
          "imageheight":80,
-         "imagewidth":38
+         "imagewidth":38,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":8,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":17,
+                     "x":13,
+                     "y":70
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            }
         }, 
         {
          "id":24,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/pineTree01.png",
          "imageheight":32,
-         "imagewidth":16
+         "imagewidth":16,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":2,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":3,
+                     "x":7,
+                     "y":29
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            }
         }, 
         {
          "id":25,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/pineTree02.png",
          "imageheight":42,
-         "imagewidth":16
+         "imagewidth":16,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":3,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":2,
+                     "id":2,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":4,
+                     "x":6,
+                     "y":36
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            }
         }, 
         {
          "id":26,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/pineTree03.png",
          "imageheight":48,
-         "imagewidth":16
+         "imagewidth":16,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":2,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":4,
+                     "x":6,
+                     "y":42
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            }
         }, 
         {
          "id":27,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/pineTree04.png",
          "imageheight":80,
-         "imagewidth":40
+         "imagewidth":40,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":6,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":12,
+                     "x":13,
+                     "y":72
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            }
         }, 
         {
          "id":28,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/redMushroom01.png",
          "imageheight":8,
-         "imagewidth":5
+         "imagewidth":5,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":2,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":2,
+                     "x":2,
+                     "y":6
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            },
+         "type":"NonObstructing"
         }, 
         {
          "id":29,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/redMushroom02.png",
          "imageheight":12,
-         "imagewidth":8
+         "imagewidth":8,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":3,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":4,
+                     "x":3,
+                     "y":9
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            },
+         "type":"NonObstructing"
         }, 
         {
          "id":30,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/redMushroom03.png",
          "imageheight":16,
-         "imagewidth":13
+         "imagewidth":13,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":2,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":4,
+                     "x":6,
+                     "y":13
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            },
+         "type":"NonObstructing"
         }, 
         {
          "id":31,
@@ -205,76 +653,66 @@
          "imagewidth":16
         }, 
         {
-         "id":32,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/rock01.png",
-         "imageheight":15,
-         "imagewidth":16
-        }, 
-        {
-         "id":33,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/rock01_Mossy.png",
-         "imageheight":16,
-         "imagewidth":16
-        }, 
-        {
-         "id":34,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/rock02.png",
-         "imageheight":15,
-         "imagewidth":16
-        }, 
-        {
-         "id":35,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/rock02_Mossy.png",
-         "imageheight":16,
-         "imagewidth":16
-        }, 
-        {
-         "id":36,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/rock03.png",
-         "imageheight":15,
-         "imagewidth":16
-        }, 
-        {
-         "id":37,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/rock03_Mossy.png",
-         "imageheight":15,
-         "imagewidth":16
-        }, 
-        {
-         "id":38,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/rock04.png",
-         "imageheight":14,
-         "imagewidth":32
-        }, 
-        {
-         "id":39,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/rock04_Mossy.png",
-         "imageheight":15,
-         "imagewidth":32
-        }, 
-        {
-         "id":40,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/rock05.png",
-         "imageheight":30,
-         "imagewidth":32
-        }, 
-        {
-         "id":41,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/rock05_Mossy.png",
-         "imageheight":31,
-         "imagewidth":32
-        }, 
-        {
          "id":42,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/sapling01.png",
          "imageheight":16,
-         "imagewidth":14
+         "imagewidth":14,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":2,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":4,
+                     "x":5,
+                     "y":13
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            },
+         "type":"NonObstructing"
         }, 
         {
          "id":43,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/sapling02.png",
          "imageheight":17,
-         "imagewidth":13
+         "imagewidth":13,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":3,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":4,
+                     "x":4,
+                     "y":14
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            },
+         "type":"NonObstructing"
         }, 
         {
          "id":44,
@@ -367,66 +805,6 @@
          "imagewidth":14
         }, 
         {
-         "id":59,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/smallRock01.png",
-         "imageheight":10,
-         "imagewidth":13
-        }, 
-        {
-         "id":60,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/smallRock01_Mossy.png",
-         "imageheight":10,
-         "imagewidth":13
-        }, 
-        {
-         "id":61,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/smallRock02.png",
-         "imageheight":8,
-         "imagewidth":10
-        }, 
-        {
-         "id":62,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/smallRock02_Mossy.png",
-         "imageheight":8,
-         "imagewidth":10
-        }, 
-        {
-         "id":63,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/smallRock03.png",
-         "imageheight":10,
-         "imagewidth":13
-        }, 
-        {
-         "id":64,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/smallRock03_Mossy.png",
-         "imageheight":10,
-         "imagewidth":13
-        }, 
-        {
-         "id":65,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/smallRock04.png",
-         "imageheight":7,
-         "imagewidth":11
-        }, 
-        {
-         "id":66,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/smallRock04_Mossy.png",
-         "imageheight":7,
-         "imagewidth":11
-        }, 
-        {
-         "id":67,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/smallRock05.png",
-         "imageheight":6,
-         "imagewidth":7
-        }, 
-        {
-         "id":68,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/smallRock05_Mossy.png",
-         "imageheight":6,
-         "imagewidth":7
-        }, 
-        {
          "id":69,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/tree_fruit.png",
          "imageheight":48,
@@ -442,27 +820,87 @@
          "id":71,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/treeStump01.png",
          "imageheight":20,
-         "imagewidth":16
+         "imagewidth":16,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "height":0,
+                     "id":1,
+                     "name":"",
+                     "polygon":[
+                            {
+                             "x":0,
+                             "y":0
+                            }, 
+                            {
+                             "x":4.63636363636364,
+                             "y":4.90909090909091
+                            }, 
+                            {
+                             "x":11.9090909090909,
+                             "y":4.09090909090909
+                            }, 
+                            {
+                             "x":15.7272727272727,
+                             "y":-1.36363636363636
+                            }, 
+                            {
+                             "x":11.8181818181818,
+                             "y":-3.81818181818182
+                            }, 
+                            {
+                             "x":5.09090909090909,
+                             "y":-3.81818181818182
+                            }],
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":0,
+                     "x":0.454545454545455,
+                     "y":14.1818181818182
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            }
         }, 
         {
          "id":72,
          "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/treeStump02.png",
          "imageheight":19,
-         "imagewidth":11
-        }, 
-        {
-         "id":73,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/well_Grass.png",
-         "imageheight":26,
-         "imagewidth":26
-        }, 
-        {
-         "id":74,
-         "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/well_noGrass.png",
-         "imageheight":25,
-         "imagewidth":25
+         "imagewidth":11,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "ellipse":true,
+                     "height":5.36363636363637,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":9.27272727272727,
+                     "x":-0.0909090909090913,
+                     "y":11.8181818181818
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            }
         }],
- "tilewidth":65,
+ "tilewidth":40,
  "type":"tileset",
  "version":"1.10"
 }

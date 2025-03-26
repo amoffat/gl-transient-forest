@@ -34,11 +34,13 @@ export function initRoom(): Room {
   // const time = Date.UTC(2025, 1, 13, 0, 0, 0, 0);
   // host.time.setSunTime(time);
 
+  host.time.setSunEvent(SunEvent.SolarNoon, 0);
+
   music = host.sound.loadSound({
-    name: "Musics/17 - Fight.ogg",
+    name: "gl:woods-day.ogg",
     loop: true,
     autoplay: true,
-    volume: 0.5,
+    volume: 1.2,
   });
 
   return room;
@@ -82,11 +84,6 @@ export function assetLoadedEvent(id: i32): void {}
  */
 export function pickupEvent(slug: string, took: bool): void {
   log(`Pickup event: ${slug}, ${took}`);
-  if (slug === "flame" && took) {
-    host.lights.toggleLight("flame", false);
-    host.sensors.toggleSensor("flame", false);
-    host.npc.toggleNPC("flame", false);
-  }
 }
 
 /**
@@ -105,17 +102,6 @@ export function buttonPressEvent(slug: string, down: bool): void {}
  */
 export function choiceMadeEvent(textSlug: string, choice: string): void {
   log(`Choice made for ${textSlug}: ${choice}`);
-  if (textSlug === "well-body" && choice === "jump-down") {
-    host.map.exit("well", true);
-  } else if (textSlug === "flame-body" && choice === "extinguish") {
-    host.pickup.offerPickup("flame");
-  } else if (textSlug === "frank-body") {
-    if (choice === "wait-morning") {
-      host.time.setSunEvent(SunEvent.Sunrise, 10);
-    } else if (choice === "wait-night") {
-      host.time.setSunEvent(SunEvent.Night, 10);
-    }
-  }
 }
 
 /**
@@ -149,33 +135,6 @@ let sawOasisSign = false;
  */
 export function sensorEvent(name: string, entered: bool): void {
   log(`Sensor event: ${name}, ${entered}`);
-  if (name === "oasis" && entered && !sawOasisSign) {
-    host.text.displaySign("oasis-entry-title", "oasis-entry-body");
-    sawOasisSign = true;
-  } else if (name === "flame" && entered) {
-    host.text.displayInteraction("flame-title", "flame-body", [
-      "just-passing",
-      "extinguish",
-    ]);
-  } else if (name === "knight" && entered) {
-    host.text.displayInteraction("knight-title", "knight-body", []);
-  } else if (name === "well" && entered) {
-    host.text.displayInteraction("well-title", "well-body", [
-      "jump-down",
-      "step-back",
-    ]);
-  } else if (name === "exit-east" && entered) {
-    host.map.exit("east", false);
-  } else if (name === "exit-west" && entered) {
-    host.map.exit("west", false);
-  } else if (name === "exit-south" && entered) {
-    host.map.exit("south", false);
-  } else if (name === "frank" && entered) {
-    host.text.displayInteraction("frank-title", "frank-body", [
-      "wait-morning",
-      "wait-night",
-    ]);
-  }
 }
 
 /**
@@ -186,11 +145,8 @@ export function timeChangedEvent(event: SunEvent): void {
   log(`Time changed: ${getSunEventName(event)}`);
 
   const night = isNight(event);
-  host.lights.toggleLight("flame", night);
-  host.sensors.toggleSensor("flame", night);
-  host.npc.toggleNPC("flame", night);
 
-  const lights = ["frank-light", "house-light-1"];
+  const lights = ["streetlamp"];
   for (let i = 0; i < lights.length; i++) {
     host.lights.toggleLight(lights[i], night);
   }
@@ -218,7 +174,7 @@ export function tickRoom(timestep: f32): void {
   host.filters.setTiltShiftY(tsfid, player.pos.y - 10);
 
   // This syncs the time of day with the real world.
-  host.time.setSunTime(Date.now());
+  // host.time.setSunTime(Date.now());
 
   // Or we can advance the time of day manually, increasing the step size to
   // make the days faster.

@@ -41,7 +41,8 @@
             "type": "enum",
             "values": [
                 "constant",
-                "campfire"
+                "campfire",
+                "fluorescent"
             ],
             "valuesAsFlags": false
         },
@@ -101,18 +102,17 @@
             ]
         },
         {
-            "id": 2,
-            "name": "NPC animation",
-            "storageType": "string",
-            "type": "enum",
-            "values": [
-                "Idle",
-                "WalkLeft",
-                "WalkRight",
-                "WalkUp",
-                "WalkDown"
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 13,
+            "members": [
             ],
-            "valuesAsFlags": true
+            "name": "NonObstructing",
+            "type": "class",
+            "useAs": [
+                "tile",
+                "project"
+            ]
         },
         {
             "color": "#ffa0a0a4",
@@ -167,6 +167,29 @@
             ]
         },
         {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 14,
+            "members": [
+                {
+                    "name": "sound",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "name": "volume",
+                    "type": "float",
+                    "value": 1
+                }
+            ],
+            "name": "Sound",
+            "type": "class",
+            "useAs": [
+                "object",
+                "project"
+            ]
+        },
+        {
             "id": 5,
             "name": "WalkSound",
             "storageType": "string",
@@ -214,6 +237,29 @@
             "type": "class",
             "useAs": [
                 "tile",
+                "project"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 12,
+            "members": [
+                {
+                    "name": "zoom",
+                    "type": "float",
+                    "value": 1.5
+                },
+                {
+                    "name": "zoomPadding",
+                    "type": "float",
+                    "value": 16
+                }
+            ],
+            "name": "Zoom",
+            "type": "class",
+            "useAs": [
+                "object",
                 "project"
             ]
         }

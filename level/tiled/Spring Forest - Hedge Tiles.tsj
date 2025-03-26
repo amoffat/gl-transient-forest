@@ -1,0 +1,14 @@
+{ "columns":8,
+ "image":"..\/art\/Pixel Alchemy 1 - Spring Forest\/Spring Forest - Hedge Tiles.png",
+ "imageheight":192,
+ "imagewidth":128,
+ "margin":0,
+ "name":"Spring Forest - Hedge Tiles",
+ "spacing":0,
+ "tilecount":96,
+ "tiledversion":"1.11.2",
+ "tileheight":16,
+ "tilewidth":16,
+ "type":"tileset",
+ "version":"1.10"
+}
