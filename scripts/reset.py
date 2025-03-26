@@ -1,5 +1,6 @@
 from pathlib import Path
 import shutil
+import os
 
 THIS_DIR = Path(__file__).resolve().parent
 ROOT_DIR = THIS_DIR.parent
@@ -29,6 +30,10 @@ def clear_sounds():
     SOUNDS_DIR.mkdir()
 
 def main():
+    confirm_reset = os.getenv("CONFIRM_RESET")
+    if confirm_reset != "yes":
+        print("Reset cancelled.")
+        return
     clear_tiled()
     clear_art()
     clear_sounds()
