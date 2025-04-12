@@ -1,3 +1,9 @@
+## 0.4.1 - 4/12/25
+
+- Fix bad `WORKSPACE_DIR` env var
+- Bugfix for bad DIND config
+- Use template version instead of engine version when upgrading
+
 ## 0.4.0 - 4/11/25
 
 - TwineJs integration for dialogue authoring
