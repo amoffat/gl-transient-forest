@@ -708,15 +708,15 @@
                  "x":16,
                  "y":-48
                 }],
-         "height":32,
+         "height":16,
          "id":24,
          "name":"ridges",
          "opacity":1,
-         "startx":0,
-         "starty":-64,
+         "startx":16,
+         "starty":-48,
          "type":"tilelayer",
          "visible":true,
-         "width":32,
+         "width":16,
          "x":0,
          "y":0
         }, 
@@ -830,8 +830,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":-31,
-                 "y":-580
+                 "x":258.333333333333,
+                 "y":-647
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -2616,6 +2616,12 @@
                  "height":40,
                  "id":273,
                  "name":"james",
+                 "properties":[
+                        {
+                         "name":"tilesets",
+                         "type":"string",
+                         "value":"Frog Jump"
+                        }],
                  "rotation":0,
                  "type":"NPC",
                  "visible":true,

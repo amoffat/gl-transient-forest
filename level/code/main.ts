@@ -3,18 +3,20 @@ import * as host from "@gl/api/w2h/host";
 import { Room } from "@gl/types/room";
 import { getSunEventName, SunEvent } from "@gl/types/time";
 import { Player } from "@gl/utils/player";
-import { isNight } from "@gl/utils/time";
+import * as dialogue from "./dialogue";
+import { FrogState } from "./frog";
 
 export { card } from "./card";
+export { choiceMadeEvent, strings } from "./dialogue";
 export { exits } from "./exits";
 export { pickups } from "./pickups";
-export { strings } from "./strings";
 
 const log = host.debug.log;
 
 let tsfid!: i32;
 let player!: Player;
 let music!: i32;
+const frogJump = new FrogState(23);
 
 /**
  * This function initializes your level. It's called once when the level is
@@ -33,8 +35,7 @@ export function initRoom(): Room {
    */
   // const time = Date.UTC(2025, 1, 13, 0, 0, 0, 0);
   // host.time.setSunTime(time);
-
-  host.time.setSunEvent(SunEvent.SolarNoon, 0);
+  host.time.setSunEvent(SunEvent.Sunrise, 0.5);
 
   music = host.sound.loadSound({
     name: "gl:woods-day.ogg",
@@ -77,6 +78,19 @@ export function timerEvent(id: u32): void {
 export function assetLoadedEvent(id: i32): void {}
 
 /**
+ * Called when an async event is triggered. This is usually used for things like
+ * animations being finished. This is to support the fact that AS doesn't yet
+ * support promises or async/await.
+ *
+ * @param id The async event id.
+ */
+export function asyncEvent(id: i32): void {
+  if (id === frogJump.asyncId) {
+    frogJump.advance();
+  }
+}
+
+/**
  * Called when a pickup event occurs.
  *
  * @param slug The slug of the pickup that was interacted with.
@@ -92,16 +106,11 @@ export function pickupEvent(slug: string, took: bool): void {
  * @param slug The slug of the button that was pressed.
  * @param down Whether the button was pressed down or released.
  */
-export function buttonPressEvent(slug: string, down: bool): void {}
-
-/**
- * Called when the player interacts with a choice dialog.
- *
- * @param textSlug The slug of the text dialog that the user interacted with.
- * @param choice The slug of the text choice that the user made.
- */
-export function choiceMadeEvent(textSlug: string, choice: string): void {
-  log(`Choice made for ${textSlug}: ${choice}`);
+export function buttonPressEvent(slug: string, down: bool): void {
+  if (slug.startsWith("passage/") && down) {
+    const passage = slug.split("/")[1];
+    dialogue.dispatch(passage);
+  }
 }
 
 /**
@@ -116,6 +125,7 @@ export function choiceMadeEvent(textSlug: string, choice: string): void {
  * @param row The row of the tile in the map.
  */
 export function tileCollisionEvent(
+  initiator: string,
   tsTileId: i32,
   gid: i32,
   entered: bool,
@@ -125,16 +135,30 @@ export function tileCollisionEvent(
   // log(`Collision event: ${tsTileId}, ${gid}, ${entered} @ ${column}, ${row}`);
 }
 
-let sawOasisSign = false;
-
 /**
  * Called when a sensor event occurs.
  *
- * @param name The name of the sensor that was triggered. This is set in Tiled.
+ * @param initiator The name of the entity that triggered the sensor. This is
+ * usually the player, but can be other entities as well.
+ * @param sensorName The name of the sensor that was triggered. This is set in
+ * Tiled.
  * @param entered Whether the player entered or exited the sensor.
  */
-export function sensorEvent(name: string, entered: bool): void {
-  log(`Sensor event: ${name}, ${entered}`);
+export function sensorEvent(
+  initiator: string,
+  sensorName: string,
+  entered: bool
+): void {
+  log(
+    `Sensor event: '${initiator}' ${entered ? "entered" : "left"} '${sensorName}'`
+  );
+  if (initiator !== "player") {
+    return;
+  }
+
+  if (sensorName === "james" && entered && frogJump.idle) {
+    frogJump.jump();
+  }
 }
 
 /**
@@ -143,13 +167,6 @@ export function sensorEvent(name: string, entered: bool): void {
  */
 export function timeChangedEvent(event: SunEvent): void {
   log(`Time changed: ${getSunEventName(event)}`);
-
-  const night = isNight(event);
-
-  const lights = ["streetlamp"];
-  for (let i = 0; i < lights.length; i++) {
-    host.lights.toggleLight(lights[i], night);
-  }
 }
 
 /**

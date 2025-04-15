@@ -12,11 +12,11 @@
         {
          "animation":[
                 {
-                 "duration":50,
+                 "duration":30,
                  "tileid":4
                 }, 
                 {
-                 "duration":200,
+                 "duration":70,
                  "tileid":5
                 }, 
                 {
@@ -28,11 +28,11 @@
                  "tileid":0
                 }, 
                 {
-                 "duration":100,
+                 "duration":300,
                  "tileid":1
                 }, 
                 {
-                 "duration":100,
+                 "duration":200,
                  "tileid":2
                 }, 
                 {
@@ -53,6 +53,11 @@
                  "name":"animation",
                  "type":"string",
                  "value":"Jump"
+                }, 
+                {
+                 "name":"groundOffset",
+                 "type":"float",
+                 "value":-8
                 }],
          "type":"NPC Tile"
         }],

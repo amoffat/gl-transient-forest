@@ -12,26 +12,49 @@
         {
          "animation":[
                 {
-                 "duration":300,
+                 "duration":200,
                  "tileid":0
                 }, 
                 {
-                 "duration":300,
+                 "duration":200,
                  "tileid":1
                 }, 
                 {
-                 "duration":100,
+                 "duration":200,
                  "tileid":2
                 }, 
                 {
-                 "duration":100,
+                 "duration":200,
                  "tileid":3
                 }, 
                 {
-                 "duration":300,
+                 "duration":200,
                  "tileid":4
                 }],
          "id":0,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "id":2,
+             "name":"",
+             "objects":[
+                    {
+                     "height":6.0498753117207,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":32,
+                     "x":4,
+                     "y":26.9501246882793
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            },
          "properties":[
                 {
                  "name":"animation",
@@ -41,36 +64,9 @@
                 {
                  "name":"groundOffset",
                  "type":"float",
-                 "value":-7
+                 "value":-8
                 }],
          "type":"NPC Tile"
-        }, 
-        {
-         "id":1,
-         "objectgroup":
-            {
-             "draworder":"index",
-             "id":2,
-             "name":"",
-             "objects":[
-                    {
-                     "ellipse":true,
-                     "height":8,
-                     "id":1,
-                     "name":"",
-                     "rotation":0,
-                     "type":"",
-                     "visible":true,
-                     "width":32,
-                     "x":4,
-                     "y":25
-                    }],
-             "opacity":1,
-             "type":"objectgroup",
-             "visible":true,
-             "x":0,
-             "y":0
-            }
         }],
  "tilewidth":40,
  "type":"tileset",

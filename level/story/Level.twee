@@ -1,0 +1,20 @@
+:: StoryTitle
+Level
+
+
+:: StoryData
+{
+  "ifid": "42606E9F-4998-4E4F-B362-A2EA3669F35F",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Untitled",
+  "zoom": 1
+}
+
+
+:: Talk to Frog {"position":"950,350","size":"100,100"}
+
+
+
+:: Untitled {"position":"850,175","size":"100,100"}
+[[Talk to Frog]]
