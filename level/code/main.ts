@@ -16,7 +16,8 @@ const log = host.debug.log;
 let tsfid!: i32;
 let player!: Player;
 let music!: i32;
-const frogJump = new FrogState(23);
+const frogName = "james";
+const frogState = new FrogState(23, frogName);
 
 /**
  * This function initializes your level. It's called once when the level is
@@ -85,8 +86,8 @@ export function assetLoadedEvent(id: i32): void {}
  * @param id The async event id.
  */
 export function asyncEvent(id: i32): void {
-  if (id === frogJump.asyncId) {
-    frogJump.advance();
+  if (id === frogState.asyncId) {
+    frogState.advance();
   }
 }
 
@@ -156,8 +157,9 @@ export function sensorEvent(
     return;
   }
 
-  if (sensorName === "james" && entered && frogJump.idle) {
-    frogJump.jump();
+  if (sensorName === "james" && entered && frogState.idle) {
+    const vec = frogState.curPos.sub(player.pos).normalize().scaled(40);
+    frogState.jump(vec);
   }
 }
 
@@ -189,6 +191,7 @@ export function tickRoom(timestep: f32): void {
   host.player.setAction(player.action);
   host.player.setPos(player.pos.x, player.pos.y);
   host.filters.setTiltShiftY(tsfid, player.pos.y - 10);
+  frogState.tick(timestep);
 
   // This syncs the time of day with the real world.
   // host.time.setSunTime(Date.now());
