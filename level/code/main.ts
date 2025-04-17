@@ -3,18 +3,19 @@ import * as host from "@gl/api/w2h/host";
 import { Room } from "@gl/types/room";
 import { getSunEventName, SunEvent } from "@gl/types/time";
 import { Player } from "@gl/utils/player";
-import * as dialogue from "./dialogue";
 import { FrogState } from "./frog";
+import * as dialogue from "./generated/dialogue";
 
 export { card } from "./card";
-export { choiceMadeEvent, strings } from "./dialogue";
 export { exits } from "./exits";
+export { choiceMadeEvent, strings } from "./generated/dialogue";
 export { pickups } from "./pickups";
 
 const log = host.debug.log;
 
 let tsfid!: i32;
 let player!: Player;
+let ambientSound!: i32;
 let music!: i32;
 const frogName = "james";
 const frogState = new FrogState(23, frogName);
@@ -36,13 +37,20 @@ export function initRoom(): Room {
    */
   // const time = Date.UTC(2025, 1, 13, 0, 0, 0, 0);
   // host.time.setSunTime(time);
-  host.time.setSunEvent(SunEvent.Sunrise, 0.5);
+  host.time.setSunEvent(SunEvent.SolarNoon, 0);
 
-  music = host.sound.loadSound({
+  ambientSound = host.sound.loadSound({
     name: "gl:woods-day.ogg",
     loop: true,
     autoplay: true,
     volume: 1.2,
+  });
+
+  music = host.sound.loadSound({
+    name: "music-2.ogg",
+    loop: true,
+    autoplay: true,
+    volume: 0.5,
   });
 
   return room;
@@ -136,6 +144,13 @@ export function tileCollisionEvent(
   // log(`Collision event: ${tsTileId}, ${gid}, ${entered} @ ${column}, ${row}`);
 }
 
+export function dialogClosedEvent(passageId: string): void {
+  if (passageId == "32c606cd") {
+    const vec = frogState.curPos.sub(player.pos).normalize().scaled(40);
+    frogState.jump(vec);
+  }
+}
+
 /**
  * Called when a sensor event occurs.
  *
@@ -158,8 +173,12 @@ export function sensorEvent(
   }
 
   if (sensorName === "james" && entered && frogState.idle) {
-    const vec = frogState.curPos.sub(player.pos).normalize().scaled(40);
-    frogState.jump(vec);
+    if (dialogue.hasVisited("32c606cd")) {
+      const vec = frogState.curPos.sub(player.pos).normalize().scaled(40);
+      frogState.jump(vec);
+    } else {
+      dialogue.passage_32c606cd();
+    }
   }
 }
 

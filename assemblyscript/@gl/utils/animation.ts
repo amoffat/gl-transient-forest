@@ -80,7 +80,7 @@ export class Animator {
   }
 
   /** A time duration othat accounts for our speed */
-  private get _adjustedDuration(): f32 {
+  get adjustedDuration(): f32 {
     return this._duration / this._speed;
   }
 
@@ -94,7 +94,7 @@ export class Animator {
     this._elapsedTime += deltaMS * this._direction;
     const timeProgress = Math.max(
       0,
-      Math.min(this._elapsedTime / this._adjustedDuration, 1)
+      Math.min(this._elapsedTime / this.adjustedDuration, 1)
     ) as f32;
 
     const valueFn =
@@ -122,14 +122,14 @@ export class Animator {
       if (this._pingPong && !this._repeat) {
         if (this._direction === 1 && valueProgress === 1) {
           this._direction = -1;
-          this._elapsedTime = this._adjustedDuration;
+          this._elapsedTime = this.adjustedDuration;
         } else if (this._direction === -1 && valueProgress === 0) {
           isComplete = true;
         }
       } else if (this._repeat) {
         if (this._pingPong) {
           this._direction *= -1;
-          this._elapsedTime = valueProgress === 0 ? 0 : this._adjustedDuration;
+          this._elapsedTime = valueProgress === 0 ? 0 : this.adjustedDuration;
         } else {
           this._elapsedTime = 0;
         }
@@ -158,7 +158,7 @@ export class Animator {
   reverse(): void {
     this._direction = -1;
     this._isPlaying = true;
-    this._elapsedTime = this._adjustedDuration;
+    this._elapsedTime = this.adjustedDuration;
   }
 
   stop(): void {

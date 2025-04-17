@@ -8,12 +8,15 @@ Level
   "format": "SugarCube",
   "format-version": "2.37.3",
   "start": "Untitled",
+  "tag-colors": {
+    "Samko": "green"
+  },
   "zoom": 1
 }
 
 
-:: Talk to Frog {"position":"950,350","size":"100,100"}
-
+:: Talk to Frog [Samko] {"position":"1000,375","size":"100,100"}
+Stay away from me!!
 
 
 :: Untitled {"position":"850,175","size":"100,100"}

@@ -2,7 +2,7 @@ import { SetAnimationOpts } from "@gl/api/types/animation";
 import { LoadAndPlaySoundOpts } from "@gl/api/types/sound";
 import * as host from "@gl/api/w2h/host";
 import { Animator, AnimatorOpts, lerp } from "@gl/utils/animation";
-import { easeOutQuart } from "@gl/utils/easing";
+import { easeInOutQuad, easeOutQuart } from "@gl/utils/easing";
 import { Vec2 } from "@gl/utils/la/vec2";
 
 export enum JumpState {
@@ -18,9 +18,9 @@ export class FrogState {
   state: JumpState = JumpState.Idle;
   moveAnim: Animator;
   jumpAnim: Animator;
-  pos: Vec2;
+  _startPos: Vec2;
   name: string;
-  private _landPos: Vec2 = new Vec2(0, 0);
+  private _jumpVec: Vec2 = new Vec2(0, 0);
   private _posInitialized: bool = false;
   private _flip: bool = false;
 
@@ -29,8 +29,8 @@ export class FrogState {
     this.name = name;
 
     const moveOpts = new AnimatorOpts();
-    moveOpts.duration = 2000;
-    // moveOpts.forwardCurve = easeInOutQuad;
+    moveOpts.duration = 1000;
+    moveOpts.forwardCurve = easeInOutQuad;
     this.moveAnim = new Animator(moveOpts);
 
     const jumpOpts = new AnimatorOpts();
@@ -40,11 +40,12 @@ export class FrogState {
     jumpOpts.pingPong = true;
     this.jumpAnim = new Animator(jumpOpts);
 
-    this.pos = new Vec2(0, 0);
+    this._startPos = new Vec2(0, 0);
   }
 
   jump(vec: Vec2): void {
-    this._landPos = this.pos.added(vec);
+    this._startPos = this.curPos;
+    this._jumpVec = vec;
     this.state = JumpState.StartJump;
     this._flip = vec.x > 0;
     this.advance();
@@ -61,7 +62,6 @@ export class FrogState {
   advance(): void {
     switch (this.state) {
       case JumpState.StartJump:
-        this.pos = this.curPos;
         this.state = JumpState.Airborne;
         host.npc.flip(this.name, this._flip, false);
 
@@ -99,15 +99,18 @@ export class FrogState {
 
   tick(deltaMS: f32): void {
     if (!this._posInitialized) {
-      this.pos = host.npc.getPos(this.name).toVec2();
+      this._startPos = host.npc.getPos(this.name).toVec2();
       this._posInitialized = true;
     }
 
     this.moveAnim.tick(deltaMS);
     this.jumpAnim.tick(deltaMS);
 
-    this.pos.lerp(this._landPos, this.moveAnim.progress);
-    const height = lerp(0, 10, this.jumpAnim.progress);
-    host.npc.setPos(this.name, this.pos.x, this.pos.y, height);
+    const newPos = this._startPos.lerped(
+      this._startPos.added(this._jumpVec),
+      this.moveAnim.progress
+    );
+    const height = lerp(0, this._jumpVec.magnitude / 2, this.jumpAnim.progress);
+    host.npc.setPos(this.name, newPos.x, newPos.y, height);
   }
 }
