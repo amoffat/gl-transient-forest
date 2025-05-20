@@ -1,14 +1,17 @@
 import * as host from "@gl/api/w2h/host";
 
-import { Room } from "@gl/types/room";
+import { String } from "@gl/types/i18n";
 import { getSunEventName, SunEvent } from "@gl/types/time";
 import { Player } from "@gl/utils/player";
+import { hasVisited } from "@gl/utils/twine";
 import { FrogState } from "./frog";
 import * as dialogue from "./generated/dialogue";
 
+export { initAsyncStack } from "@gl/utils/asyncify";
 export { card } from "./card";
 export { exits } from "./exits";
-export { choiceMadeEvent, strings } from "./generated/dialogue";
+export { choiceMadeEvent } from "./generated/dialogue";
+export { grantedMarkers, usedMarkers } from "./markers";
 export { pickups } from "./pickups";
 
 const log = host.debug.log;
@@ -25,10 +28,9 @@ const frogState = new FrogState(23, frogName);
  * loaded. Use it to set up your level, like setting the time of day, or adding
  * filters.
  */
-export function initRoom(): Room {
+export function initRoom(): void {
   player = Player.default();
 
-  const room = new Room();
   tsfid = host.filters.addTiltShift(0.06);
 
   /**
@@ -44,6 +46,7 @@ export function initRoom(): Room {
     loop: true,
     autoplay: true,
     volume: 1.2,
+    sprites: [],
   });
 
   music = host.sound.loadSound({
@@ -51,9 +54,39 @@ export function initRoom(): Room {
     loop: true,
     autoplay: true,
     volume: 0.5,
+    sprites: [],
   });
+}
 
-  return room;
+/**
+ * Called on level initialization to expose what strings we use in our level.
+ * This is used for localization.
+ *
+ * @returns The strings that our level uses.
+ */
+export function strings(): String[] {
+  const ourStrings: String[] = [
+    {
+      key: "overheat",
+      values: [
+        {
+          text: "Heat exhaustion",
+          lang: "en",
+        },
+      ],
+    },
+    {
+      key: "take-fruit",
+      values: [
+        {
+          text: "Steal",
+          lang: "en",
+        },
+      ],
+    },
+  ];
+  const dialogueStrings = dialogue.strings();
+  return ourStrings.concat(dialogueStrings);
 }
 
 /**
@@ -173,11 +206,11 @@ export function sensorEvent(
   }
 
   if (sensorName === "james" && entered && frogState.idle) {
-    if (dialogue.hasVisited("32c606cd")) {
+    if (hasVisited("32c606cd")) {
       const vec = frogState.curPos.sub(player.pos).normalize().scaled(40);
       frogState.jump(vec);
     } else {
-      dialogue.passage_32c606cd();
+      dialogue.passage_Samko();
     }
   }
 }

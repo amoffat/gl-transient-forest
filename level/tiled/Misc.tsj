@@ -14,19 +14,19 @@
  "tiles":[
         {
          "id":34,
-         "image":"..\/art\/misc\/ME_Singles_Garden_16x16_Angel_Statue_1.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Garden_16x16_Angel_Statue_1.png",
          "imageheight":112,
          "imagewidth":80
         }, 
         {
          "id":35,
-         "image":"..\/art\/misc\/ME_Singles_Garden_16x16_Statue_Angel_1.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Garden_16x16_Statue_Angel_1.png",
          "imageheight":112,
          "imagewidth":80
         }, 
         {
          "id":36,
-         "image":"..\/art\/misc\/ME_Singles_Camping_16x16_Tent_1.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Camping_16x16_Tent_1.png",
          "imageheight":64,
          "imagewidth":64,
          "objectgroup":
@@ -88,13 +88,13 @@
         }, 
         {
          "id":37,
-         "image":"..\/art\/misc\/ME_Singles_Subway_and_Train_Station_16x16_Meh_Graffiti.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Subway_and_Train_Station_16x16_Meh_Graffiti.png",
          "imageheight":32,
          "imagewidth":80
         }, 
         {
          "id":38,
-         "image":"..\/art\/misc\/ME_Singles_Camping_16x16_Tent_2.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Camping_16x16_Tent_2.png",
          "imageheight":64,
          "imagewidth":64,
          "objectgroup":
@@ -156,7 +156,7 @@
         }, 
         {
          "id":39,
-         "image":"..\/art\/misc\/ME_Singles_Camping_16x16_Tent_3.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Camping_16x16_Tent_3.png",
          "imageheight":64,
          "imagewidth":64,
          "objectgroup":
@@ -207,109 +207,109 @@
         }, 
         {
          "id":40,
-         "image":"..\/art\/misc\/ME_Singles_Garden_16x16_Grass_Statue_1.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Garden_16x16_Grass_Statue_1.png",
          "imageheight":32,
          "imagewidth":64
         }, 
         {
          "id":41,
-         "image":"..\/art\/misc\/ME_Singles_Garden_16x16_Grass_Statue_2.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Garden_16x16_Grass_Statue_2.png",
          "imageheight":32,
          "imagewidth":64
         }, 
         {
          "id":42,
-         "image":"..\/art\/misc\/ME_Singles_Garden_16x16_Grass_Statue_3.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Garden_16x16_Grass_Statue_3.png",
          "imageheight":32,
          "imagewidth":64
         }, 
         {
          "id":44,
-         "image":"..\/art\/misc\/ME_Singles_Garden_16x16_Grass_Statue_4.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Garden_16x16_Grass_Statue_4.png",
          "imageheight":32,
          "imagewidth":64
         }, 
         {
          "id":45,
-         "image":"..\/art\/misc\/ME_Singles_Subway_and_Train_Station_16x16_Yellow_Writing_Graffiti.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Subway_and_Train_Station_16x16_Yellow_Writing_Graffiti.png",
          "imageheight":32,
          "imagewidth":48
         }, 
         {
          "id":46,
-         "image":"..\/art\/misc\/ME_Singles_Garden_16x16_Grass_Statue_6.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Garden_16x16_Grass_Statue_6.png",
          "imageheight":48,
          "imagewidth":48
         }, 
         {
          "id":47,
-         "image":"..\/art\/misc\/ME_Singles_Garden_16x16_Grass_Statue_5.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Garden_16x16_Grass_Statue_5.png",
          "imageheight":48,
          "imagewidth":48
         }, 
         {
          "id":48,
-         "image":"..\/art\/misc\/ME_Singles_Subway_and_Train_Station_16x16_Blue_Wolf_Dirty_Graffiti_2.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Subway_and_Train_Station_16x16_Blue_Wolf_Dirty_Graffiti_2.png",
          "imageheight":32,
          "imagewidth":48
         }, 
         {
          "id":49,
-         "image":"..\/art\/misc\/ME_Singles_Camping_16x16_Wood_Board_2.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Camping_16x16_Wood_Board_2.png",
          "imageheight":32,
          "imagewidth":32
         }, 
         {
          "id":50,
-         "image":"..\/art\/misc\/ME_Singles_Camping_16x16_Wood_Board_3.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Camping_16x16_Wood_Board_3.png",
          "imageheight":32,
          "imagewidth":32
         }, 
         {
          "id":51,
-         "image":"..\/art\/misc\/ME_Singles_Vehicles_16x16_Public_Phone_2.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Vehicles_16x16_Public_Phone_2.png",
          "imageheight":64,
          "imagewidth":32
         }, 
         {
          "id":52,
-         "image":"..\/art\/misc\/ME_Singles_Garden_16x16_Grass_Statue_7.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Garden_16x16_Grass_Statue_7.png",
          "imageheight":32,
          "imagewidth":32
         }, 
         {
          "id":53,
-         "image":"..\/art\/misc\/ME_Singles_Camping_16x16_Wood_Board_1.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Camping_16x16_Wood_Board_1.png",
          "imageheight":32,
          "imagewidth":32
         }, 
         {
          "id":54,
-         "image":"..\/art\/misc\/ME_Singles_Graveyard_16x16_Brown_Cross_3.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Graveyard_16x16_Brown_Cross_3.png",
          "imageheight":48,
          "imagewidth":32
         }, 
         {
          "id":55,
-         "image":"..\/art\/misc\/ME_Singles_Hotel_and_Hospital_32x32_Stretcher_4.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Hotel_and_Hospital_32x32_Stretcher_4.png",
          "imageheight":64,
          "imagewidth":96
         }, 
         {
          "id":56,
-         "image":"..\/art\/misc\/ME_Singles_Hotel_and_Hospital_32x32_Stretcher_2.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Hotel_and_Hospital_32x32_Stretcher_2.png",
          "imageheight":64,
          "imagewidth":96
         }, 
         {
          "id":58,
-         "image":"..\/art\/misc\/ME_Singles_Graveyard_16x16_Cross_Pile_Of_Dirt.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Graveyard_16x16_Cross_Pile_Of_Dirt.png",
          "imageheight":32,
          "imagewidth":16
         }, 
         {
          "id":59,
-         "image":"..\/art\/misc\/ME_Singles_Vehicles_16x16_Public_Phone_1.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Vehicles_16x16_Public_Phone_1.png",
          "imageheight":48,
          "imagewidth":32,
          "objectgroup":
@@ -337,61 +337,61 @@
         }, 
         {
          "id":60,
-         "image":"..\/art\/misc\/ME_Singles_Camping_16x16_Sign_7.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Camping_16x16_Sign_7.png",
          "imageheight":32,
          "imagewidth":16
         }, 
         {
          "id":61,
-         "image":"..\/art\/misc\/ME_Singles_Garden_16x16_Red_Watering_Can_Empty_Left.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Garden_16x16_Red_Watering_Can_Empty_Left.png",
          "imageheight":16,
          "imagewidth":32
         }, 
         {
          "id":62,
-         "image":"..\/art\/misc\/ME_Singles_Camping_16x16_Sign_5.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Camping_16x16_Sign_5.png",
          "imageheight":32,
          "imagewidth":16
         }, 
         {
          "id":63,
-         "image":"..\/art\/misc\/ME_Singles_Camping_16x16_Sign_6.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Camping_16x16_Sign_6.png",
          "imageheight":32,
          "imagewidth":16
         }, 
         {
          "id":64,
-         "image":"..\/art\/misc\/ME_Singles_Camping_16x16_Sign_8.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Camping_16x16_Sign_8.png",
          "imageheight":32,
          "imagewidth":16
         }, 
         {
          "id":65,
-         "image":"..\/art\/misc\/ME_Singles_Camping_16x16_Sign_4.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Camping_16x16_Sign_4.png",
          "imageheight":32,
          "imagewidth":16
         }, 
         {
          "id":66,
-         "image":"..\/art\/misc\/ME_Singles_Camping_16x16_Sign_1.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Camping_16x16_Sign_1.png",
          "imageheight":16,
          "imagewidth":16
         }, 
         {
          "id":67,
-         "image":"..\/art\/misc\/ME_Singles_Camping_16x16_Sign_3.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Camping_16x16_Sign_3.png",
          "imageheight":16,
          "imagewidth":16
         }, 
         {
          "id":68,
-         "image":"..\/art\/misc\/ME_Singles_Camping_16x16_Sign_2.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Camping_16x16_Sign_2.png",
          "imageheight":16,
          "imagewidth":16
         }, 
         {
          "id":69,
-         "image":"..\/art\/misc\/ME_Singles_City_Props_16x16_Street_Lamp_2.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_City_Props_16x16_Street_Lamp_2.png",
          "imageheight":64,
          "imagewidth":32,
          "objectgroup":
@@ -420,13 +420,13 @@
         }, 
         {
          "id":70,
-         "image":"..\/art\/misc\/ME_Singles_Camping_16x16_Stump_1.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Camping_16x16_Stump_1.png",
          "imageheight":16,
          "imagewidth":32
         }, 
         {
          "id":71,
-         "image":"..\/art\/misc\/ME_Singles_Camping_16x16_Stump_2.png",
+         "image":"..\/art\/restricted\/misc\/ME_Singles_Camping_16x16_Stump_2.png",
          "imageheight":16,
          "imagewidth":32
         }],

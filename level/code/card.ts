@@ -10,17 +10,32 @@ export function card(): Card {
       name: "Transient Forest",
       version: 1,
     },
-    source: "https://github.com/your-username/your-repo",
+    source: "https://github.com/amoffat/gl-transient-forest",
     credits: [
       {
         name: "Andrew",
         role: "Author",
-        link: "https://your-website.com",
+        link: "https://x.com/GetLostTheGame",
       },
       {
-        name: "Collaborator name",
-        role: "Artist",
-        link: "https://artist-website.com",
+        name: "TransientCode",
+        role: "Tileset Artist",
+        link: "https://x.com/TransientCode",
+      },
+      {
+        name: "LimeZu",
+        role: "Tileset Artist",
+        link: "https://limezu.itch.io/",
+      },
+      {
+        name: "Pixel-boy",
+        role: "Tileset Artist",
+        link: "https://x.com/2Pblog1",
+      },
+      {
+        name: "Ben Burnes",
+        role: "Music",
+        link: "https://x.com/ben_burnes",
       },
     ],
   };
