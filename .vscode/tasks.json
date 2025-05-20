@@ -16,7 +16,11 @@
       "label": "Upgrade Level",
       "type": "shell",
       "command": "python3",
-      "args": ["${workspaceFolder}/scripts/upgrade.py"],
+      "args": [
+        "${workspaceFolder}/.internal/scripts/upgrade.py",
+        "--branch",
+        "${input:branchName}"
+      ],
       "problemMatcher": [],
       "group": {
         "kind": "build",
@@ -33,7 +37,7 @@
       "label": "Reset Level",
       "type": "shell",
       "command": "python3",
-      "args": ["${workspaceFolder}/scripts/reset.py"],
+      "args": ["${workspaceFolder}/.internal/scripts/reset.py"],
       "problemMatcher": [],
       "group": {
         "kind": "build",
@@ -50,6 +54,28 @@
           "CONFIRM_RESET": "${input:confirmReset}"
         }
       }
+    },
+    {
+      "label": "Import Assets Key",
+      "type": "shell",
+      "command": "${workspaceFolder}/.internal/scripts/import_assets_key.sh",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "clear": true
+      },
+      "options": {
+        "env": {
+          "ASSETS_KEY": "${input:assetsKey}"
+        }
+      }
     }
   ],
   "inputs": [
@@ -58,6 +84,19 @@
       "type": "promptString",
       "description": "Type 'yes' to confirm reset",
       "default": ""
+    },
+    {
+      "id": "assetsKey",
+      "type": "promptString",
+      "description": "Enter the assets key",
+      "password": true,
+      "default": ""
+    },
+    {
+      "id": "branchName",
+      "type": "promptString",
+      "description": "Enter the branch name to upgrade from",
+      "default": "main"
     }
   ]
 }

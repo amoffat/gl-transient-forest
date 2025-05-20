@@ -1,0 +1,21 @@
+.container {
+  background: black;
+  overflow: auto;
+  color: white;
+  font-family: monospace;
+}
+
+.success {
+  color: limegreen;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.warn {
+  color: yellow;
+  font-weight: bold;
+}
